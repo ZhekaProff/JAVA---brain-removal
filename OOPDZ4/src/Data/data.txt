@@ -1,0 +1,9 @@
+{"name":Vasia,"height":180,"weight":80}
+{"name":Vasia,"height":180,"weight":80}
+123
+{"name":Vasia,"height":180,"weight":80}
+{"name":Vasia,"height":180,"weight":80}
+"Hello"
+{"name":Vasia,"height":180,"weight":80}
+"Hello"
+456
