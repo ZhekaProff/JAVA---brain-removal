@@ -7,7 +7,4 @@ public class Owner extends People{
     public Owner(String name, int age) {
         super(name, age);
     }
-
-
-
 }

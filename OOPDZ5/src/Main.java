@@ -1,15 +1,18 @@
 import Model.Company;
 import Model.People;
+import Present.*;
+import View.*;
+
 
 public class Main {
     public static void main(String[] args) {
         People kadeykin = new People("Кадейкин", 34);
-        Company codeFathers = new Company("CF", "Discord", kadeykin);
+        Company kadfather = new Company("Кадейкин и Ко", "Discord", kadeykin);
         People kadeykin1 = new People("Кадейкин1", 34);
         People stone = new People("Кирилл", 38);
-        codeFathers.hiring(kadeykin1, "Завхоз", 200);
-        codeFathers.showWorkers();
-        codeFathers.hiring(stone, "Блогер", 50);
-        System.out.println(codeFathers);
+        kadfather.hiring(kadeykin1, "Завхоз", 200);
+        kadfather.hiring(stone, "Блогер", 50);
+
+        Present.start(kadfather);
     }
 }
