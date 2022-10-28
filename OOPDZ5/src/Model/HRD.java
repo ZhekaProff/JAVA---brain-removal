@@ -13,13 +13,6 @@ public class HRD {
         this.candidateList = new ArrayList<People>();
     }
 
-    public void addCandidate(){
-        String name = View.inputString("Введите имя кандидата: ");
-        int age = View.inputInt("Введите возраст кандидата: ");
-        People people = new People(name, age);
-        this.candidateList.add(people);
-    }
-
     public void loadCandidate(){
         try(BufferedReader br = new BufferedReader(new FileReader("src/Data/candidate.txt")))
         {

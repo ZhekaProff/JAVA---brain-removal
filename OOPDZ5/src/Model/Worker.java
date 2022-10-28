@@ -9,6 +9,11 @@ public class Worker extends People{
         this.post = post;
         this.salary = salary;
     }
+    public Worker(String name, int age){
+        super(name, age);
+
+    }
+
 
     public int getSalary() {
         return salary;
