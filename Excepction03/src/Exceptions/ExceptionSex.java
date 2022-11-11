@@ -1,3 +1,5 @@
+package Exceptions;
+
 public class ExceptionSex extends Exception{
     public ExceptionSex(){
 
