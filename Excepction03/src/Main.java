@@ -1,4 +1,4 @@
-import Exceptions.ExceptionSex;
+import Exceptions.ExceptionGender;
 import Exceptions.NameException;
 import Exceptions.TelephoneException;
 
@@ -15,12 +15,6 @@ public class Main {
     final static String DATE_FORMAT = "dd.MM.yyyy";
     final static String PATH_FORMAT = "src/Data/";
 
-
-    public static void printArray(String[] array) {
-        for (String element : array) {
-            System.out.print(element + " ");
-        }
-    }
 
     public static boolean checkLange(String[] array) {
         if (array.length < 6)
@@ -80,9 +74,9 @@ public class Main {
         }
         return true;
     }
-    public static boolean checkSex(String[] array) throws ExceptionSex {
+    public static boolean checkGender(String[] array) throws ExceptionGender {
         if((!Objects.equals(array[5], "m")) && (!Objects.equals(array[5], "f"))){
-            throw new ExceptionSex();
+            throw new ExceptionGender();
         }
         return true;
     }
@@ -129,7 +123,7 @@ public class Main {
                 check = checkMiddleName(array);
                 check = isDateValid(array);
                 check = checkTelephone(array);
-                check = checkSex(array);
+                check = checkGender(array);
                 check = false;
             } catch (RuntimeException e) {
                 System.out.println("Проверьте введеные данные");
@@ -144,7 +138,7 @@ public class Main {
             }catch (ParseException e){
                 System.out.println("Дата: " + "<" + array[3] + "> " + "Указана не коректно");
 
-            }catch (ExceptionSex e){
+            }catch (ExceptionGender e){
                 System.out.println("Пол указан не верно");
             }
         }
